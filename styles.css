@@ -88,6 +88,16 @@ img {
   border-radius: 3px;
 }
 
+@media screen and (min-width: 780px) {
+  img {
+    width: 23vw;
+  }
+}
+@media screen and (min-width: 1020px) {
+  img {
+    width: 18vw;
+  }
+}
 .center {
   display: flex;
   flex-wrap: wrap;
