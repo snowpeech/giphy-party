@@ -19,7 +19,7 @@ $("form").on("submit", function (e) {
 
 async function getGif(searchTerm) {
   const res = await axios.get(
-    `http://api.giphy.com/v1/gifs/search?q=${searchTerm}&api_key=${key}&limit=30&rating=G`
+    `https://api.giphy.com/v1/gifs/search?q=${searchTerm}&api_key=${key}&limit=30&rating=G`
   );
   let randGif = getRandom(res.data.data.length);
 
@@ -39,8 +39,6 @@ removeGifs.addEventListener("click", function () {
 
 $("#cute").on("click", function () {
   let cuteI = getRandom(cuteTerms.length - 1);
-  console.log(cuteI);
-  console.log(cuteTerms[cuteI]);
   getGif(cuteTerms[cuteI]);
 });
 
