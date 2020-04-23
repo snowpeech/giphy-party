@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Giphy Party!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<h1>Giphy Party!</h1>
+<form>
+  <label for="search">What's the mood?</label>
+  <div>
+    <input type="text" id="search" placeholder="Search here" required></input>
+    <button id="addGif" class="circle">+</button>
+
+  </div>
+
+</form>
+<div class="center">
+  <button id="removeGifs" class="danger">Remove all GIFs</button>
+  <button id="cute">Add an Awww</button>
+
+</div>
+<div id="gifList" class="center"></div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.js"></script>
+<script src="app.js"></script>
+</body>
+
+</html>

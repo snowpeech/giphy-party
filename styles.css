@@ -1,0 +1,96 @@
+:root {
+  --primary: black;
+  --secondary: hsl(229, 46%, 56%);
+  --danger: rgb(245, 115, 115);
+}
+
+h1 {
+  font-family: "Fredoka One", cursive;
+  margin: auto;
+  /* width: 50%; */
+  padding: 40px;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+form {
+  font-family: "Poppins", sans-serif;
+  margin: auto;
+  width: 70%;
+  text-align: center;
+}
+label {
+  display: block;
+}
+
+input {
+  font-family: "Poppins", sans-serif;
+  border-top: 5px solid white;
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+  border-bottom: 1px solid black;
+  -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1),
+    0 0 16px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 0 0 10px 0;
+}
+
+button {
+  display: inline-block;
+  border: 1px solid var(--secondary);
+  margin: 10px;
+  text-decoration: none;
+  background: white;
+  border-radius: 3px;
+  color: var(--secondary);
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+  background: var(--secondary);
+  color: white;
+  border: none;
+}
+
+button:active {
+  transform: scale(0.99);
+}
+
+.danger:hover,
+.danger:focus {
+  background: var(--danger);
+  color: white;
+}
+.danger {
+  border: 1px solid var(--danger);
+  color: var(--danger);
+}
+
+.circle {
+  border-radius: 50%;
+  font-family: "Fredoka One", cursive;
+  padding: 0px 7px 2px;
+}
+
+img {
+  width: 30vw;
+  padding: 4px;
+  border-radius: 3px;
+}
+
+.center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
